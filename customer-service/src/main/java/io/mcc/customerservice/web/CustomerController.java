@@ -17,11 +17,7 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @RequestMapping("/{userName}")
-    public CustomerList getCustomer(@PathVariable String userName) {
-        //return customerService.
-        return  customerList;
-    }
+
 
 
     @GetMapping("/all")
@@ -37,12 +33,50 @@ public class CustomerController {
 
     }
 
+
+
     @GetMapping("/{name}")
     @ResponseBody
     public CustomerList getByName(@PathVariable("name") String name) {
        return customerService.getCustomer(name);
 
     }
+
+
+    //update customer
+    @PutMapping("/{userName}")
+    @ResponseBody
+    public void updateCustomer(@RequestBody CustomerList customerList, @PathVariable String userName) {
+        customerService.updateCustomer(customerList, userName);
+    }
+
+    //Delete customer
+    @DeleteMapping("/{userName}")
+    @ResponseBody
+    public void deleteCustomer( @PathVariable String userName) {
+        customerService.deleteTopic(userName);
+    }
+
+
+    /*
+    @GetMapping("/{userId}")
+    @ResponseBody
+    public UserData getUserByName(String userId) {
+        List<CustomerList> users = new ArrayList<>(Arrays.asList(
+                new CustomerList("Joe", "chu_joe@bah.com"),
+                new CustomerList("Mohamed", "Said_mohamed@bah.com")
+        ));
+
+        UserData userData = new UserData();
+        userData.setUserData(users);
+        return userData;
+    }
+
+     */
+
+
+
+
 
 
 
