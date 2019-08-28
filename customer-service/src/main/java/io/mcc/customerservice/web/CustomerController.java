@@ -14,12 +14,13 @@ public class CustomerController {
     @Autowired
     private CustomerList customerList;
 
-    @Autowired CustomerService customerService;
+    @Autowired
+    private CustomerService customerService;
 
-    @RequestMapping("/userName")
-    public List<CustomerList> getCustomer(@PathVariable String userName) {
-        return (List<CustomerList>) new CustomerList("Test", "mohamed.a.said@gmail.com");
-
+    @RequestMapping("/{userName}")
+    public CustomerList getCustomer(@PathVariable String userName) {
+        //return customerService.
+        return  customerList;
     }
 
 
@@ -28,6 +29,22 @@ public class CustomerController {
     public List<CustomerList> getAllCustiomer() {
         return customerService.getAllCustomer();
     }
+
+    @PostMapping("/create")
+    @ResponseBody
+    public void addCustomer(@RequestBody() CustomerList customerList) {
+        customerService.addCustomer(customerList);
+
+    }
+
+    @GetMapping("/{name}")
+    @ResponseBody
+    public CustomerList getByName(@PathVariable("name") String name) {
+       return customerService.getCustomer(name);
+
+    }
+
+
 
 
 
