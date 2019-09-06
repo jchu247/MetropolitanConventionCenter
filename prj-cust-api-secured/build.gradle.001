@@ -1,0 +1,44 @@
+plugins { id "org.springframework.boot" version "2.1.5.RELEASE" } // this should be first line
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+group = 'com.webage.spring.samples'
+version = '0.0.1-SNAPSHOT'
+
+description = "Spring-Boot-JPA"
+
+mainClassName = "com.webage.App"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+     maven { url "https://repo.maven.apache.org/maven2" }
+     maven { url "https://plugins.gradle.org/m2/" }
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version:'1.4.2.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.4.2.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version:'1.4.2.RELEASE'
+    compile group: 'org.hsqldb', name: 'hsqldb', version:'2.3.3'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version:'1.4.2.RELEASE'
+    compile group: 'com.sun.xml.bind', name: 'jaxb-core', version:'2.3.0.1'
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version:'2.3.1'
+    compile group: 'com.sun.xml.bind', name: 'jaxb-impl', version:'2.3.1'
+    compile group: 'javax.activation', name: 'activation', version:'1.1.1'
+    compile group: 'io.jsonwebtoken', name: 'jjwt-api', version:'0.10.5'
+    compile group: 'org.json', name: 'json', version:'20180813'
+	compile 'io.micrometer:micrometer-registry-prometheus:latest.release'
+    runtime group: 'io.jsonwebtoken', name: 'jjwt-impl', version:'0.10.5'
+    runtime group: 'io.jsonwebtoken', name: 'jjwt-jackson', version:'0.10.5'
+    runtime group: 'org.bouncycastle', name: 'bcprov-jdk15on', version:'1.60'
+    
+}

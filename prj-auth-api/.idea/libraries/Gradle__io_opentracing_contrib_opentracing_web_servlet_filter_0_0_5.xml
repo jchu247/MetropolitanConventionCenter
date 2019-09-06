@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.opentracing.contrib:opentracing-web-servlet-filter:0.0.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentracing.contrib/opentracing-web-servlet-filter/0.0.5/da728e384f2c5b23b7994da7983e364a2675a56f/opentracing-web-servlet-filter-0.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentracing.contrib/opentracing-web-servlet-filter/0.0.5/15006dcdfb082f7c135ffd71d17adc5da12c2573/opentracing-web-servlet-filter-0.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

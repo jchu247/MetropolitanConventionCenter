@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.opentracing.contrib:opentracing-spanmanager:0.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentracing.contrib/opentracing-spanmanager/0.0.3/68240b856b99034db7d257e5b90ba75efc085417/opentracing-spanmanager-0.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentracing.contrib/opentracing-spanmanager/0.0.3/65a82852648a7126ab7d24ec955caa162c2c6169/opentracing-spanmanager-0.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

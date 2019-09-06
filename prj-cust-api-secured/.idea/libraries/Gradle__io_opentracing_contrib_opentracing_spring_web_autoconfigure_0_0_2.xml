@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.opentracing.contrib:opentracing-spring-web-autoconfigure:0.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentracing.contrib/opentracing-spring-web-autoconfigure/0.0.2/f1de527894f86b82a7161302f9df6cb20827ca5f/opentracing-spring-web-autoconfigure-0.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentracing.contrib/opentracing-spring-web-autoconfigure/0.0.2/254140f3c184512407e7cf343076a4178a831bb0/opentracing-spring-web-autoconfigure-0.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

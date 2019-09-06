@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.uber.jaeger:jaeger-core:0.18.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.uber.jaeger/jaeger-core/0.18.0/32628be5e5a0c7886634e7ed195e1a8da42e131a/jaeger-core-0.18.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.uber.jaeger/jaeger-core/0.18.0/ea8d5ea6e783a22fbbd17d6046e984d575fe5597/jaeger-core-0.18.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
